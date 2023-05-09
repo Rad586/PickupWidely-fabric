@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "pickupwidely",
+  "version": "${version}",
+
+  "name": "PickupWidely",
+  "description": "This mod increases the radius in which the player can pickup items",
+  "authors": [
+    "HadronCollision"
+  ],
+  "contact": {
+  },
+
+  "license": "GNU GPL-3.0",
+  "icon": "assets/pickupwidely/pickup-widely.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "me.hadroncollision.pickupwidely.PickupWidely"
+    ],
+    "client": [
+      "me.hadroncollision.pickupwidely.PickupWidelyClient"
+    ]
+  },
+  "mixins": [
+    "pickupwidely.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.6",
+    "fabric": "*",
+    "minecraft": "~1.19",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
