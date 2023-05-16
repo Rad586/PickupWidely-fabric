@@ -4,11 +4,12 @@
   "version": "${version}",
 
   "name": "PickupWidely",
-  "description": "This mod increases the radius in which the player can pickup items",
+  "description": "This mod increases the radius in which the player can pickup items.",
   "authors": [
     "HadronCollision"
   ],
   "contact": {
+    "discord": "https://discord.com/users/930191705360195665"
   },
 
   "license": "GNU GPL-3.0",
