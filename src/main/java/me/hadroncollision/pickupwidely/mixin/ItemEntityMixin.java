@@ -42,7 +42,7 @@ public abstract class ItemEntityMixin extends Entity
         Vec3d itemPos = this.getPos();
         BlockPos blockPos = new BlockPos((int) itemPos.getX(), (int) itemPos.getY(), (int) itemPos.getZ());
         Box box = new Box(blockPos).expand(radius);
-        List<PlayerEntity> players = world.getNonSpectatingEntities(PlayerEntity.class, box);
+        List<PlayerEntity> players = this.getWorld().getNonSpectatingEntities(PlayerEntity.class, box);
 
         if (!players.isEmpty())
         {
