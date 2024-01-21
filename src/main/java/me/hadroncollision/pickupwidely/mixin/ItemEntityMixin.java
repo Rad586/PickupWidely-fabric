@@ -32,13 +32,7 @@ public abstract class ItemEntityMixin extends Entity
     private void tick(CallbackInfo ci)
     {
         byte radius;
-        if (ModConfigs.PICKUP_RADIUS < 1)
-        {
-            radius = 3;
-        } else
-        {
-            radius = ModConfigs.PICKUP_RADIUS;
-        }
+        radius = ModConfigs.PICKUP_RADIUS;
         Vec3d itemPos = this.getPos();
         BlockPos blockPos = new BlockPos((int) itemPos.getX(), (int) itemPos.getY(), (int) itemPos.getZ());
         Box box = new Box(blockPos).expand(radius);
